@@ -8,7 +8,7 @@ API_URL = os.getenv("API_URL", "http://localhost:8000")
 st.set_page_config(page_title="Maize Price Predictor", page_icon="🌽")
 
 st.title("🌽 Maize Price Predictor")
-st.caption("Owino Market, Kampala — Random Forest Model")
+st.caption("Kampala Owino Market · Powered by historical price data")
 st.markdown("Enter the last 6 months of Maize prices (UGX/kg), oldest first.")
 
 col1, col2 = st.columns(2)
