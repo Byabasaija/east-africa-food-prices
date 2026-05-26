@@ -10,3 +10,6 @@ wheels/
 .venv
 *.pkl
 .env
+
+# Raw data — download from HuggingFace datasets
+food_prices_model/data/raw/

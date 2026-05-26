@@ -16,8 +16,14 @@ async def lifespan(app: FastAPI):
         filename="maize_price_model_v2.pkl",
     )
     app.state.model = joblib.load(model_path)
+
+    cpi_path = hf_hub_download(
+        repo_id="byabasaija/uganda-food-cpi",
+        filename="food_cpi_monthly.csv",
+        repo_type="dataset",
+    )
     app.state.cpi = pd.read_csv(
-        "food_cpi_monthly.csv",
+        cpi_path,
         dtype={"year": int, "month": int, "food_cpi": float},
     ).set_index(["year", "month"])["food_cpi"]
     yield
