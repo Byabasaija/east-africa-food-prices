@@ -11,5 +11,6 @@ wheels/
 *.pkl
 .env
 
-# Raw data — download from HuggingFace datasets
+# Data files — stored on HuggingFace datasets
 food_prices_model/data/raw/
+food_prices_model/data/*.csv
