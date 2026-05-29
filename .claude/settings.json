@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:acleddata.com)",
       "WebFetch(domain:gpm.nasa.gov)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(hf upload *)"
     ]
   }
 }
