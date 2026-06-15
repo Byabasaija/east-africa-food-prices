@@ -5,7 +5,9 @@
       "WebFetch(domain:gpm.nasa.gov)",
       "WebSearch",
       "Bash(hf upload *)",
-      "Bash(.venv/bin/python -c ' *)"
+      "Bash(.venv/bin/python -c ' *)",
+      "Read(//Users/pascal/projects/portfolio/public/images/**)",
+      "Read(//Users/pascal/projects/portfolio/public/**)"
     ]
   }
 }
