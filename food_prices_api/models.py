@@ -9,8 +9,8 @@ class PredictRequest(BaseModel):
     @field_validator("prices")
     @classmethod
     def prices_must_have_six_values(cls, v):
-        if len(v) < 6:
-            raise ValueError("prices must contain at least 6 values (last 6 months)")
+        if len(v) < 12:
+            raise ValueError("prices must contain at least 12 values (last 12 months)")
         return v
 
     @field_validator("month")

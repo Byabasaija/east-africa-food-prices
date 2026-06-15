@@ -1,13 +1,15 @@
 # Project Roadmap
 
 ## In Progress
-- [ ] Backfill CPI data to 2006 — extract from UBOS PDF reports (one per month)
+- [ ] Backfill CPI data to 2006 — downloading UBOS Excel/PDF reports and extracting maize CPI per month
+
+## Done — CPI Improvements
+- [x] Switch from broad Food CPI to maize-specific CPI
+  - "Whole grain maize" (01.1.1.1.1) and "Maize Flour" (01.1.1.2.1) from the Decomposed sheet of the UBOS Excel
+  - MAE dropped from 658 → 224 vs naive baseline 196
+- [x] Retrain model v3 with maize-specific CPI (2017–2023 train, 2024–2025 test)
 
 ## Next Up — CPI Improvements
-- [ ] Switch from broad Food CPI to maize-specific CPI
-  - "Whole grain maize" (01.1.1.1.1) and "Maize Flour" (01.1.1.2.1) are in the Decomposed sheet of the UBOS Excel
-  - Much stronger signal than the broad Food & Non-Alcoholic Beverages index
-- [ ] Retrain model with maize-specific CPI once backfill is complete (2006–2025)
 - [ ] Add FX (USD/UGX) as a feature — Bank of Uganda historical data, goes back decades
 
 ## Next Up — Data Pipeline

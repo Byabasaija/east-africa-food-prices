@@ -4,7 +4,8 @@
       "WebFetch(domain:acleddata.com)",
       "WebFetch(domain:gpm.nasa.gov)",
       "WebSearch",
-      "Bash(hf upload *)"
+      "Bash(hf upload *)",
+      "Bash(.venv/bin/python -c ' *)"
     ]
   }
 }

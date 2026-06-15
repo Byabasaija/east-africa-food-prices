@@ -33,7 +33,6 @@ Predicts next month's maize retail price at Owino market, Kampala, Uganda.
 | month | Calendar month (seasonality) |
 | year | Calendar year (trend) |
 | food_cpi | Uganda maize-specific CPI (UBOS) |
-
 ## Training Data
 
 - **Prices**: [byabasaija/uganda-maize-prices](https://huggingface.co/datasets/byabasaija/uganda-maize-prices) — WFP food price data, Owino market, retail prices averaged per month
